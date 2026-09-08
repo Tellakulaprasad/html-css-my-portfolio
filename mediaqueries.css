@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    min-height: 83vh;
     margin-bottom: 6rem;
   }
 }
@@ -30,7 +30,7 @@
     display: none;
   }
   section {
-    height: fit-content;
+    min-height: fit-content;
   }
   section {
     margin: 0 5%;
@@ -48,10 +48,10 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: fit-content;
+    min-height: fit-content;
   }
   #profile {
-    height: 83vh;
+    min-height: fit-content;
     margin-bottom: 0;
   }
   article {
