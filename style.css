@@ -196,9 +196,6 @@ section {
     scroll-margin-top: 12vh;
 }
 
-.section-container {
-    display: flex;
-}
 
 .section__text__p1 {
     text-align: center;
@@ -349,28 +346,17 @@ section {
     position: relative;
 }
 
-.about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+.about-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 3rem;
 }
 
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-    display: flex;
-}
-
-.about-pic {
-    border-radius: 1.5rem;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 1px solid var(--surface-border);
+.about-stats {
+    display: grid;
+    gap: 1.5rem;
 }
 
 .arrow {
@@ -399,14 +385,14 @@ section {
     color: var(--text);
 }
 
-.section-container {
-    gap: 4rem;
-    height: 80%;
+.text-container p {
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
 }
 
-.text-container p {
-    line-height: 1.7;
-    margin-bottom: 1rem;
+.text-container p:first-child {
+    color: var(--text);
 }
 
 /* SKILLS SECTION */
