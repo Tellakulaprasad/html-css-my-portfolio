@@ -11,14 +11,14 @@
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
-  } 
+  }
   #hamburger-nav {
     display: flex;
-  }  
-  #experience, 
+  }
+  #experience,
   .experience-details-container {
     margin-top: 2rem;
-  } 
+  }
   #profile,
   .section-container {
     display: block;
@@ -26,7 +26,7 @@
   .arrow {
     display: none;
   }
-  section, 
+  section,
   .section-container {
     height: fit-content;
   }
@@ -40,13 +40,16 @@
   }
   .about-containers {
     margin-top: 0;
-  } 
+  }
+  .job-card__header {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: fit-content;
   }
   #profile {
     height: 83vh;
@@ -65,7 +68,7 @@
     flex-wrap: wrap;
   }
   .contact-info-container {
-    margin: 0 ;
+    margin: 0.5rem;
   }
   .contact-info-container p,
   .nav-links li a {
@@ -83,17 +86,30 @@
     text-align: center;
   }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
+    width: 60vw;
+    height: 60vw;
+    max-width: 260px;
+    max-height: 260px;
     justify-content: center;
   }
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+  }
+  .section__text__p3 {
+    font-size: 0.95rem;
   }
   .title {
     font-size: 2rem;
   }
   .text-container {
     text-align: justify;
+  }
+  .job-card {
+    padding: 1.25rem;
+  }
+  .projects-grid,
+  .skills-container,
+  .cert-edu-grid {
+    grid-template-columns: 1fr;
   }
 }
